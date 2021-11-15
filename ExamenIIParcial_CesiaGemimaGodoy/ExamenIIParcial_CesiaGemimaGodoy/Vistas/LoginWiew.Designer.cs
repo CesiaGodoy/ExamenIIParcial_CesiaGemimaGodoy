@@ -29,12 +29,15 @@ namespace ExamenIIParcial_CesiaGemimaGodoy.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWiew));
             this.EmailLabel = new System.Windows.Forms.Label();
             this.ClaveLabel = new System.Windows.Forms.Label();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.ClaveTextBox = new System.Windows.Forms.TextBox();
             this.AceptarButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // EmailLabel
@@ -94,11 +97,22 @@ namespace ExamenIIParcial_CesiaGemimaGodoy.Vistas
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(449, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(119, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // LoginWiew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 236);
+            this.ClientSize = new System.Drawing.Size(605, 236);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.AceptarButton);
             this.Controls.Add(this.ClaveTextBox);
@@ -107,6 +121,7 @@ namespace ExamenIIParcial_CesiaGemimaGodoy.Vistas
             this.Controls.Add(this.EmailLabel);
             this.Name = "LoginWiew";
             this.Text = "Inicio de Sesión";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,5 +135,6 @@ namespace ExamenIIParcial_CesiaGemimaGodoy.Vistas
         public System.Windows.Forms.TextBox ClaveTextBox;
         public System.Windows.Forms.Button AceptarButton;
         public System.Windows.Forms.Button CancelarButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

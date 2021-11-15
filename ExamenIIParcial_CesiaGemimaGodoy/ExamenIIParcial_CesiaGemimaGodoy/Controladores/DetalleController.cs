@@ -16,10 +16,20 @@ namespace ExamenIIParcial_CesiaGemimaGodoy.Controladores
         DetalleDAO clientDAO = new DetalleDAO();
         DetalleTicket client = new DetalleTicket();
 
-        public DetalleController(DetalleTicket view)
-        {
-           
 
+        public string _EmailUsuario;
+
+        public DetalleController(DetalleTicketView view, string usuario)
+        {
+            vista = view;
+            _EmailUsuario = usuario;
+            vista.Load += new EventHandler(Load);
+
+        }
+
+        private void Load(object sender, EventArgs e)
+        {
+            vista.UsuarioTextBox.Text = _EmailUsuario;
         }
     }
     
